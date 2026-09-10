@@ -511,6 +511,140 @@ section .section-subtitle {
   line-height: 1.55;
 }
 
+/* Reviews Section */
+.reviews-section {
+  padding: 50px 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.reviews-section .container {
+  padding-bottom: 16px;
+}
+
+.reviews-section h2 {
+  margin-bottom: 12px;
+}
+
+.reviews-section .section-subtitle {
+  margin-bottom: 32px;
+}
+
+.reviews-section .maps-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.reviews-section .maps-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 20px 20px 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.reviews-track::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 85vw;
+  max-width: 500px;
+  background: var(--brand-soft);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--border);
+  scroll-snap-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.review-card::before {
+  content: '"';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 64px;
+  color: var(--brand);
+  opacity: 0.15;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.review-stars {
+  color: #F59E0B;
+  font-size: 18px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.review-quote {
+  font-size: 16px;
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.review-author {
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.review-date {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: right;
+  font-weight: 400;
+}
+
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 0 0;
+}
+
+.reviews-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.reviews-dot:hover {
+  background: var(--accent);
+  opacity: 0.7;
+}
+
+.reviews-dot.active {
+  background: var(--brand);
+  width: 28px;
+  border-radius: 5px;
+}
+
 /* Contact Section */
 .contact-grid {
   display: grid;
