@@ -20,8 +20,8 @@
   --bg-light: #F7FAFA;
   --text-light: var(--text-muted);
 
-  --header-h: 56px;
-  --cta-bar-h: 72px;
+  --header-h: 52px;
+  --cta-bar-h: 76px;
 
   --shadow: 0 1px 3px 0 rgba(31, 107, 107, 0.12);
   --shadow-md: 0 4px 6px -1px rgba(31, 107, 107, 0.12);
