@@ -156,6 +156,53 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Lo que dicen nuestros pacientes</h2>
+            <p class="section-subtitle">
+                Reseñas de Google Maps · <a href="https://www.google.com/maps/place/Fisioterapia+Estrella/@40.4200067,-3.6678344,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228aea47a5ca3:0x7e5e47098f1900fc!8m2!3d40.4200067!4d-3.6678344!16s%2Fg%2F11gvrlyc_2" class="maps-link" target="_blank" rel="noopener noreferrer">Ver en Google</a>
+            </p>
+        </div>
+        
+        <div class="reviews-track">
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«Guillermo es un gran profesional. Llevo años acudiendo a su clínica y siempre he salido muy satisfecha con los resultados. Además facilita siempre el horario para amoldarse a tu disponibilidad.»</p>
+                <p class="review-author">Teresa De Andrés</p>
+                <p class="review-date">hace 1 mes</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«El trato de Guillermo es excelente. Un buen fisio a un precio por sesión muy razonable. Un descubrimiento gracias a una recomendación familiar. Para que el boca a boca no cese, yo también lo recomiendo.»</p>
+                <p class="review-author">Arancha C.</p>
+                <p class="review-date">hace 10 meses</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«Fenomenal. Mi fisio de confianza. Ha sido un descubrimiento y lo recomiendo siempre que puedo»</p>
+                <p class="review-author">Pilar Úbeda</p>
+                <p class="review-date">hace 10 meses</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«He tomado varias sesiones por distintos problemas físicos y siempre he salido muy mejorado. Un gran profesional, 100% recomendado!»</p>
+                <p class="review-author">Javier Rodríguez Ros</p>
+                <p class="review-date">hace 1 año</p>
+            </div>
+        </div>
+        
+        <div class="reviews-dots">
+            <button class="reviews-dot active" aria-label="Ver reseña 1"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 2"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 3"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 4"></button>
+        </div>
+    </section>
+
     <!-- Full-width Facade Band -->
     <section class="facade-band">
         <img src="img/fachada-noche.jpg" alt="Fachada de Fisioterapia Estrella" class="facade-image">
@@ -202,7 +249,7 @@
                     </div>
                     
                     <div class="map-container">
-                        <a href="https://www.google.com/maps/search/?api=1&query=Calle+Antonio+Casero+12,+Madrid" class="btn btn-action" target="_blank" rel="noopener noreferrer" style="width: 100%; margin-top: 12px;">
+                        <a href="https://www.google.com/maps/place/Fisioterapia+Estrella/@40.4200067,-3.6678344,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228aea47a5ca3:0x7e5e47098f1900fc!8m2!3d40.4200067!4d-3.6678344!16s%2Fg%2F11gvrlyc_2" class="btn btn-action" target="_blank" rel="noopener noreferrer" style="width: 100%; margin-top: 12px;">
                             Abrir en Google Maps
                         </a>
                     </div>
@@ -232,5 +279,43 @@
             </p>
         </div>
     </footer>
+
+    <script>
+    // Reviews slider: sync dots with scroll position
+    (function() {
+        const track = document.querySelector('.reviews-track');
+        const dots = document.querySelectorAll('.reviews-dot');
+        const cards = document.querySelectorAll('.review-card');
+        
+        if (!track || !dots.length || !cards.length) return;
+        
+        function updateActiveDot() {
+            const scrollLeft = track.scrollLeft;
+            const cardWidth = cards[0].offsetWidth + 16; // card width + gap
+            const activeIndex = Math.round(scrollLeft / cardWidth);
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === activeIndex);
+            });
+        }
+        
+        // Update on scroll
+        track.addEventListener('scroll', updateActiveDot);
+        
+        // Click dot to scroll to card
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                const cardWidth = cards[0].offsetWidth + 16;
+                track.scrollTo({
+                    left: cardWidth * i,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Initial check
+        updateActiveDot();
+    })();
+    </script>
 </body>
 </html>
