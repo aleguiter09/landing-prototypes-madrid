@@ -20,6 +20,9 @@
   --bg-light: #F7FAFA;
   --text-light: var(--text-muted);
 
+  --header-h: 56px;
+  --cta-bar-h: 72px;
+
   --shadow: 0 1px 3px 0 rgba(31, 107, 107, 0.12);
   --shadow-md: 0 4px 6px -1px rgba(31, 107, 107, 0.12);
   --shadow-lg: 0 10px 15px -3px rgba(31, 107, 107, 0.12);
@@ -39,7 +42,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   background: var(--white);
-  padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  padding-bottom: calc(var(--cta-bar-h) + 20px + env(safe-area-inset-bottom));
 }
 
 
@@ -58,7 +61,7 @@ body {
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,8 +96,11 @@ body {
 .hero {
   background-color: var(--brand-dark);
   color: var(--white);
-  padding: 70px 20px 50px;
-  margin-top: 64px;
+  margin-top: var(--header-h);
+  padding-top: 40px;
+  padding-bottom: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -234,7 +240,7 @@ body {
   right: 0;
   background: var(--white);
   padding: 12px 16px;
-  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
   box-shadow: 0 -4px 12px rgba(31, 107, 107, 0.12);
   z-index: 1000;
   display: flex;
@@ -267,6 +273,10 @@ body {
 
   body {
     padding-bottom: 0;
+  }
+
+  footer {
+    padding-bottom: 36px;
   }
 }
 
@@ -582,7 +592,7 @@ section .section-subtitle {
 footer {
   background: var(--text-dark);
   color: var(--white);
-  padding: 36px 20px 24px;
+  padding: 36px 20px 28px;
   text-align: center;
 }
 
@@ -629,7 +639,11 @@ footer a:hover {
   }
 
   .hero {
-    padding: 90px 24px 70px;
+    margin-top: var(--header-h);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .hero h1 {
