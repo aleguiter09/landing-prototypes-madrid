@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos Madrid - Fisioterapia Estrella</title>
+    <link rel="stylesheet" href="shared/styles.css">
+    <style>
+        .hub-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .hub-card {
+            background: white;
+            border-radius: 16px;
+            padding: 48px 32px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hub-card h1 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            text-align: center;
+        }
+        
+        .hub-card .subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+        
+        .prototype-link {
+            display: block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 24px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .prototype-link:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .prototype-link h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .prototype-link p {
+            opacity: 0.9;
+            font-size: 15px;
+        }
+        
+        .warning-box {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 24px;
+            text-align: center;
+        }
+        
+        .warning-box strong {
+            color: #78350f;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .warning-box p {
+            color: #92400e;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="hub-container">
+        <div class="hub-card">
+            <h1>🏥 Prototipos Madrid</h1>
+            <p class="subtitle">Demos de landing pages para clínicas en Madrid</p>
+            
+            <a href="sites/fisioterapia-estrella/index.html" class="prototype-link">
+                <h2>Fisioterapia Estrella</h2>
+                <p>📍 Calle Antonio Casero, 12 · Retiro/Pacífico</p>
+                <p>Refresh moderno del sitio existente · Mobile-first</p>
+            </a>
+            
+            <div class="warning-box">
+                <strong>⚠️ PROTOTIPO / DEMO</strong>
+                <p>Estos son prototipos de demostración, no sitios web oficiales de las clínicas.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
