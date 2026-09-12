@@ -3,108 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototipos Madrid - Fisioterapia Estrella</title>
-    <link rel="stylesheet" href="shared/styles.css">
-    <style>
-        .hub-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .hub-card {
-            background: white;
-            border-radius: 16px;
-            padding: 48px 32px;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-        }
-        
-        .hub-card h1 {
-            font-size: 32px;
-            margin-bottom: 16px;
-            color: var(--text-dark);
-            text-align: center;
-        }
-        
-        .hub-card .subtitle {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 32px;
-            font-size: 16px;
-        }
-        
-        .prototype-link {
-            display: block;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding: 24px 32px;
-            border-radius: 12px;
-            text-decoration: none;
-            margin-bottom: 16px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: var(--shadow);
-        }
-        
-        .prototype-link:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .prototype-link h2 {
-            font-size: 24px;
-            margin-bottom: 8px;
-        }
-        
-        .prototype-link p {
-            opacity: 0.9;
-            font-size: 15px;
-        }
-        
-        .warning-box {
-            background: #fef3c7;
-            border: 2px solid #fbbf24;
-            border-radius: 8px;
-            padding: 16px;
-            margin-top: 24px;
-            text-align: center;
-        }
-        
-        .warning-box strong {
-            color: #78350f;
-            display: block;
-            margin-bottom: 4px;
-        }
-        
-        .warning-box p {
-            color: #92400e;
-            font-size: 14px;
-            margin: 0;
-        }
-    </style>
+    <meta name="description" content="Fisioterapia Estrella - Centro de fisioterapia en Madrid. Rehabilitación, terapia manual, fisioterapia deportiva y más.">
+    <title>Fisioterapia Estrella - Madrid | Retiro/Pacífico</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hub-container">
-        <div class="hub-card">
-            <h1>🏥 Prototipo Madrid</h1>
-            <p class="subtitle">Demo de landing page para Fisioterapia Estrella</p>
-            
-            <a href="sites/fisioterapia-estrella/index.html" class="prototype-link">
-                <h2>Fisioterapia Estrella</h2>
-                <p>📍 Calle Antonio Casero, 12 · Madrid (Retiro/Pacífico)</p>
-                <p>Refresh moderno del sitio · Precios claros · Mobile-first</p>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo-wordmark">Fisioterapia Estrella</div>
+            <a href="tel:+34915733915" class="header-phone">
+                📞 915 733 915
             </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('img/hero-bg-alt.jpg');">
+        <div class="hero-content">
+            <h1>Tratamiento Personalizado<br>en Tu Barrio</h1>
+            <p class="subtitle">Fisioterapia profesional y cualificada en el corazón de Retiro/Pacífico</p>
+            <p class="tagline">En Fisioterapia Estrella recibirás atención especializada de fisioterapeutas certificados. Nuestro centro está totalmente equipado para ofrecerte el mejor tratamiento adaptado a tus necesidades.</p>
             
-            <div class="warning-box">
-                <strong>⚠️ PROTOTIPO / DEMO</strong>
-                <p>Este es un prototipo de demostración, no el sitio web oficial de la clínica.</p>
+            <div class="cta-buttons">
+                <a href="tel:+34915733915" class="btn btn-primary">
+                    📞 Llamar ahora
+                </a>
+                <a href="mailto:fisioterapiaestrella@gmail.com" class="btn btn-secondary">
+                    ✉️ Escribir
+                </a>
             </div>
         </div>
+    </section>
+
+    <!-- Trust/Experience Section -->
+    <section class="trust-section">
+        <div class="trust-content">
+            <div class="trust-photo">
+                <img src="img/interior.jpg" alt="Centro de fisioterapia profesional" class="clinic-photo">
+                <p class="photo-caption">Fisioterapia profesional en Madrid</p>
+            </div>
+            
+            <h2>Amplia Experiencia y Profesionalidad</h2>
+            <p>Estará en manos de personal altamente cualificado con años de experiencia. Ofrecemos un tratamiento personalizado adaptado a cada patología, porque sabemos que cada paciente es único.</p>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="trust-badge-text">Profesionales<br>Certificados</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="trust-badge-text">Centro<br>Equipado</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <div class="trust-badge-text">Tratamiento<br>Personalizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestras Terapias</h2>
+            <p class="section-subtitle">
+                Especialidades de fisioterapia para tu recuperación y bienestar
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Rehabilitación</h3>
+                    <p>Recuperación funcional tras lesiones o cirugías</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Terapia Manual</h3>
+                    <p>Técnicas especializadas para aliviar dolor</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Reeducación Postural Global</h3>
+                    <p>Corrección de desequilibrios posturales</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Fisioterapia Deportiva</h3>
+                    <p>Tratamiento de lesiones deportivas</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Fisioterapia Respiratoria</h3>
+                    <p>Mejora de la función respiratoria</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Neurorehabilitación</h3>
+                    <p>Rehabilitación neurológica especializada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifas" class="bg-light">
+        <div class="container">
+            <h2>Tarifas</h2>
+            <p class="section-subtitle">
+                Precios transparentes y sin sorpresas
+            </p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Primera Sesión</h3>
+                    <p class="duration">60 minutos</p>
+                    <div class="price">40€</div>
+                    <p class="price-note">Evaluación y diagnóstico completo</p>
+                    <a href="tel:+34915733915" class="btn btn-action" style="width: 100%;">Reservar</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Sesión Individual</h3>
+                    <p class="duration">45 minutos</p>
+                    <div class="price">35€</div>
+                    <p class="price-note">Tratamiento personalizado</p>
+                    <a href="tel:+34915733915" class="btn btn-action" style="width: 100%;">Reservar</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Bono 10 Sesiones</h3>
+                    <p class="duration">45 minutos cada sesión</p>
+                    <div class="price">315€</div>
+                    <p class="price-note">Válido por un año</p>
+                    <a href="tel:+34915733915" class="btn btn-action" style="width: 100%;">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Lo que dicen nuestros pacientes</h2>
+            <p class="section-subtitle">
+                Reseñas de Google Maps · <a href="https://www.google.com/maps/place/Fisioterapia+Estrella/@40.4200067,-3.6678344,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228aea47a5ca3:0x7e5e47098f1900fc!8m2!3d40.4200067!4d-3.6678344!16s%2Fg%2F11gvrlyc_2" class="maps-link" target="_blank" rel="noopener noreferrer">Ver en Google</a>
+            </p>
+        </div>
+        
+        <div class="reviews-track">
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«Guillermo es un gran profesional. Llevo años acudiendo a su clínica y siempre he salido muy satisfecha con los resultados. Además facilita siempre el horario para amoldarse a tu disponibilidad.»</p>
+                <p class="review-author">Teresa De Andrés</p>
+                <p class="review-date">hace 1 mes</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«El trato de Guillermo es excelente. Un buen fisio a un precio por sesión muy razonable. Un descubrimiento gracias a una recomendación familiar. Para que el boca a boca no cese, yo también lo recomiendo.»</p>
+                <p class="review-author">Arancha C.</p>
+                <p class="review-date">hace 10 meses</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«Fenomenal. Mi fisio de confianza. Ha sido un descubrimiento y lo recomiendo siempre que puedo»</p>
+                <p class="review-author">Pilar Úbeda</p>
+                <p class="review-date">hace 10 meses</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <p class="review-quote">«He tomado varias sesiones por distintos problemas físicos y siempre he salido muy mejorado. Un gran profesional, 100% recomendado!»</p>
+                <p class="review-author">Javier Rodríguez Ros</p>
+                <p class="review-date">hace 1 año</p>
+            </div>
+        </div>
+        
+        <div class="reviews-dots">
+            <button class="reviews-dot active" aria-label="Ver reseña 1"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 2"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 3"></button>
+            <button class="reviews-dot" aria-label="Ver reseña 4"></button>
+        </div>
+    </section>
+
+    <!-- Full-width Facade Band -->
+    <section class="facade-band">
+        <img src="img/fachada-noche.jpg" alt="Fachada de Fisioterapia Estrella" class="facade-image">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto y Ubicación</h2>
+            <p class="section-subtitle">
+                Estamos aquí para ayudarte. Llama sin compromiso
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Contáctanos</h3>
+                    
+                    <div class="contact-item">
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+34915733915">915 733 915</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:fisioterapiaestrella@gmail.com">fisioterapiaestrella@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-item" style="margin-top: 24px;">
+                        <strong>Horario:</strong>
+                        <p>
+                            <strong>Lunes a Viernes</strong><br>
+                            Mañanas: 9:30 – 13:30<br>
+                            Tardes: 15:00 – 20:00
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Dónde Estamos</h3>
+                    
+                    <div class="contact-item">
+                        <strong>Dirección:</strong>
+                        <p>Calle Antonio Casero, 12<br>Madrid (Retiro/Pacífico)</p>
+                    </div>
+                    
+                    <div class="map-container">
+                        <a href="https://www.google.com/maps/place/Fisioterapia+Estrella/@40.4200067,-3.6678344,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228aea47a5ca3:0x7e5e47098f1900fc!8m2!3d40.4200067!4d-3.6678344!16s%2Fg%2F11gvrlyc_2" class="btn btn-action" target="_blank" rel="noopener noreferrer" style="width: 100%; margin-top: 12px;">
+                            Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Sticky CTA Bar: Tel=brand, Mail=accent -->
+    <div class="mobile-cta-bar">
+        <a href="tel:+34915733915" class="btn btn-action">
+            📞 Llamar
+        </a>
+        <a href="mailto:fisioterapiaestrella@gmail.com" class="btn btn-secondary">
+            ✉️ Escribir
+        </a>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Fisioterapia Estrella</strong></p>
+            <p>Calle Antonio Casero, 12 · Madrid (Retiro/Pacífico)</p>
+            <p>Tel: <a href="tel:+34915733915">915 733 915</a> · Email: <a href="mailto:fisioterapiaestrella@gmail.com">fisioterapiaestrella@gmail.com</a></p>
+            <p style="margin-top: 20px; opacity: 0.7; font-size: 14px;">
+                © 2026 Fisioterapia Estrella · Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script>
+    // Reviews slider: sync dots with scroll position
+    (function() {
+        const track = document.querySelector('.reviews-track');
+        const dots = document.querySelectorAll('.reviews-dot');
+        const cards = document.querySelectorAll('.review-card');
+        
+        if (!track || !dots.length || !cards.length) return;
+        
+        function updateActiveDot() {
+            const scrollLeft = track.scrollLeft;
+            const cardWidth = cards[0].offsetWidth + 16; // card width + gap
+            const activeIndex = Math.round(scrollLeft / cardWidth);
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === activeIndex);
+            });
+        }
+        
+        // Update on scroll
+        track.addEventListener('scroll', updateActiveDot);
+        
+        // Click dot to scroll to card
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                const cardWidth = cards[0].offsetWidth + 16;
+                track.scrollTo({
+                    left: cardWidth * i,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Initial check
+        updateActiveDot();
+    })();
+    </script>
 </body>
 </html>
